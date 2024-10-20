@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Website Vulnerability Scanner</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <h1>Website Vulnerability Scanner</h1>
+    <form action="/scan" method="post">
+        <label for="url">Enter Website URL:</label>
+        <input type="text" id="url" name="url" required>
+        <button type="submit">Scan</button>
+    </form>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
